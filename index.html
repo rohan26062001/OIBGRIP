@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dp.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Calculator - Rohan Das</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box my-5">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="text-align: right; color: red; font-style: italic;">ROHAN DAS.</h6>
+                </div>
+            </div>
+            <div class="row-outer">
+                <div class="row row-inner">
+                    <div class="col-12">
+                        <input id="ipt" value="WELCOME!!!">
+                    </div>
+                </div>
+                <div class="row row-inner text-right">
+                    <div class="col-12">
+                        <input id="opt" value="ANS HERE">
+                    </div>
+                </div>
+            </div>
+            <div class="number-plate text-center">
+                <div class="row my-2">
+                    <div class="col-4 buttons ">
+                        <input class="button" type="button" value="1" onclick="display('1')" />
+                    </div>
+                    <div class="col-4  buttons  ">
+                        <input class="button" type="button" value="2" onclick="display('2')" />
+                    </div>
+                    <div class="col-4  buttons  ">
+                        <input class="button" type="button" value="3" onclick="display('3')" />
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-4 buttons ">
+                        <input class="button" type="button" value="4" onclick="display('4')" />
+                    </div>
+                    <div class="col-4  buttons ">
+                        <input class="button" type="button" value="5" onclick="display('5')" />
+                    </div>
+                    <div class="col-4  buttons ">
+                        <input class="button" type="button" value="6" onclick="display('6')" />
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-4 buttons ">
+                        <input class="button" type="button" value="7" onclick="display('7')" />
+                    </div>
+                    <div class="col-4  buttons ">
+                        <input class="button" type="button" value="8" onclick="display('8')" />
+                    </div>
+                    <div class="col-4  buttons ">
+                        <input class="button" type="button" value="9" onclick="display('9')" />
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-4  buttons ">
+                        <input class="button" type="button" value="0" onclick="display('0')" />
+                    </div>
+                    <div class="col-2  buttons ">
+                        <input class="button" type="button" value="+" onclick="display('+')" />
+                    </div>
+                    <div class="col-2  buttons ">
+                        <input class="button" type="button" value="-" onclick="display('-')" />
+                    </div>
+                    <div class="col-2  buttons ">
+                        <input class="button" type="button" value="*" onclick="display('*')" />
+                    </div>
+                    <div class="col-2  buttons ">
+                        <input class="button" type="button" value="/" onclick="display('/')" />
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-6 buttons ">
+                        <input class="button" type="button" value="=" onclick="calculate()" />
+                    </div>
+                    <div class="col-4 buttons ">
+                        <input class="button" type="button" value="CS" onclick="clearScreen()" />
+                    </div>
+                    <div class="col-2 buttons ">
+                        <input class="button" type="button" value="DL" onclick="backSpace()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
