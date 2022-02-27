@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,27 +13,32 @@
 </head>
 
 <body>
+    <!--Main Container  -->
     <div class="container">
         <div class="todo">
             <div class="add-task">
-                <input type="text" class="addTask" />
+                <input type="text" class="addTask" /> <!-- Input field for Task, we'll write here -->
                 <i class="fas fa-plus addBtn"></i>
             </div>
             <div class="list-tasks"></div>
-            <div class="tasks-statis">
-                <div class="count"><span class="all-tasks"></span> Tasks.</div>
-                <div class="completed">
+            <div class="tasks-status">
+                <!-- This will show the numbers of all tasks -->
+                <div class="count" style="font-weight: bolder;"><span class="all-tasks" ></span> Tasks.</div>
+                <div class="completed" style="font-weight: bolder;">
+                    <!-- This Span will show the number of tasks completed -->
                     <span class="completed-tasks">0</span> Tasks compeled.
                 </div>
             </div>
         </div>
     </div>
+    <!-- This is a Floating Text -->
     <marquee direction="right" 
         behavior="alternate" 
-        style="border:BLACK 2px SOLID; margin-top: 0.5rem;">
+        style="border:BLACK 2px SOLID; margin-top: 0.5rem; color: white; border-color: mediumaquamarine">
         Made By Rohan Das
     </marquee>
 </body>
+<!-- Javascript File -->
 <script src="script.js"></script>
 
 </html>

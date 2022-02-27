@@ -13,82 +13,11 @@ body {
     padding: 20px;
 }
 
-.pop-up-message {
-    width: 500px;
-    min-height: 250px;
-    position: absolute;
-    border-radius: 15px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-
-.pop-up-message .iconNo {
-    margin-top: 45px;
-    font-size: 70px;
-    color: red;
-    display: inline-block;
-    text-align: center;
-}
-
-.pop-up-message .checkExict {
-    margin-top: 25px;
-    font-size: 19px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.pop-up-message .actions {
-    float: right;
-    text-align: right;
-    margin: 10px 0;
-}
-
-.pop-up-message .actions i {
-    padding: 2.5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.pop-up-message .actions .edit {
-    color: #2d46b9;
-}
-
-.pop-up-message .actions .delete {
-    color: #bd1616;
-}
-
-.pop-up-message .actions .save {
-    color: #064420;
-}
-
-.pop-up-message p {
-    line-height: 1.4;
-    font-size: 16px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(214, 209, 209, 0.5);
-    z-index: 2;
-}
-
 .container {
     width: 600px;
     margin: auto;
     padding: 30px 0;
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: #2d46b9;
 }
 
@@ -111,6 +40,7 @@ body {
     padding: 15px 10px;
     border: none;
     background-color: #f6f6f6;
+    color: black;
     outline: none;
     border-radius: 5px;
 }
@@ -221,37 +151,47 @@ body {
     overflow: hidden;
 }
 
-.container .tasks-statis {
+.container .tasks-status {
     width: 100%;
     height: 50px;
 }
 
-.container .tasks-statis>div {
+.container .tasks-status>div {
     width: 50%;
     padding: 15px;
     font-size: 15px;
     user-select: none;
 }
 
-.container .tasks-statis>div span {
+.container .tasks-status>div span {
     color: #fff;
     padding: 2px 5px;
     border-radius: 3px;
 }
 
-.container .tasks-statis .count {
+.container .tasks-status .count {
     float: left;
 }
 
-.container .tasks-statis .count span {
+.container .tasks-status .count span {
     background-color: #ff2442;
 }
 
-.container .tasks-statis .completed {
+.container .tasks-status .completed {
     float: right;
     text-align: right;
 }
 
-.container .tasks-statis .completed span {
+.container .tasks-status .completed span {
     background-color: #3db2ff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 209, 209, 0.5);
+    z-index: 2;
 }

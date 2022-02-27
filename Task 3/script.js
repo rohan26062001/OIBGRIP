@@ -1,5 +1,5 @@
-let numTasks = document.querySelector(".all-tasks"),
-    numCompletedTasks = document.querySelector(".completed-tasks"),
+let noOfTasks = document.querySelector(".all-tasks"),
+    noOfCompletedTasks = document.querySelector(".completed-tasks"),
     btnAddTask = document.querySelector(".addBtn"),
     addTask = document.querySelector(".addTask"),
     emptyMessage = document.querySelector(".empty-tasks"),
@@ -11,11 +11,11 @@ window.onload = () => {
 };
 
 const calcNumTasks = () => {
-    numTasks.textContent = tasksContainer.getElementsByClassName("task").length;
+    noOfTasks.textContent = tasksContainer.getElementsByClassName("task").length;
 };
 
 const calcFinishedTasks = () => {
-    numCompletedTasks.textContent =
+    noOfCompletedTasks.textContent =
         tasksContainer.getElementsByClassName("finished").length;
 };
 
